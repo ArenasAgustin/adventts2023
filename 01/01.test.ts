@@ -4,7 +4,7 @@ import { expect, test } from "@jest/globals";
 const gifts = [2, 1, 3, 5, 3, 2];
 const gifts2 = [10, 20, 30];
 
-describe("Pruebas para el día 01", () => {
+describe("01", () => {
   test("Test 1: tiene que devolver un número", () => {
     expect(typeof findFirstRepeated(gifts)).toEqual("number");
   });
