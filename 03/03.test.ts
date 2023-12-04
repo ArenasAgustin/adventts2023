@@ -2,7 +2,7 @@ import findNaughtyStep from "./03";
 import { expect, test } from "@jest/globals";
 
 describe("03", () => {
-  test("Test 1: tiene que devolver un número", () => {
+  test("Test 1: tiene que devolver un string", () => {
     expect(typeof findNaughtyStep("abcd", "abcde")).toEqual("string");
   });
 

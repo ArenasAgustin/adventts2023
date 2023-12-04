@@ -2,7 +2,7 @@ import manufacture from "./02";
 import { expect, test } from "@jest/globals";
 
 describe("02", () => {
-  test("Test 1: tiene que devolver un número", () => {
+  test("Test 1: tiene que devolver un array", () => {
     expect(
       Array.isArray(manufacture(["tren", "oso", "pelota"], "tronesa"))
     ).toEqual(true);
