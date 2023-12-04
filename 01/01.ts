@@ -23,7 +23,7 @@
  * console.log(firstRepeatedId3) // 5
  */
 
-function findFirstRepeated(gifts): Number {
+function findFirstRepeated(gifts: number[]): Number {
   let firstRepeated: Number = -1;
   let map = new Map();
 

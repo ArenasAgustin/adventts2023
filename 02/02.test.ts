@@ -15,7 +15,7 @@ describe("02", () => {
     ]);
   });
 
-  test("Test 3: tiene que devolver [] en caso de no encontrar números repetidos", () => {
+  test("Test 3: tiene que devolver []", () => {
     expect(manufacture(["libro", "ps5"], "psli")).toEqual([]);
   });
 });

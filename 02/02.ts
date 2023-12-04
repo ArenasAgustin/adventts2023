@@ -24,7 +24,7 @@
  * manufacture(gifts, materials) // []
  */
 
-function manufacture(gifts: string[], materials: string) {
+function manufacture(gifts: string[], materials: string): string[] {
   const map = new Map<string, boolean>();
   const result: string[] = [];
 
