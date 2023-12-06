@@ -20,45 +20,45 @@
  */
 
 /*
-function decode(message: string): string {
-  const lastindex: number = message.lastIndexOf("(");
-  const firstindex: number = message.indexOf("(");
-
-  if (lastindex === -1 || firstindex === -1) return message;
-
-  if (firstindex === lastindex) {
-    const finish: number = message.indexOf(")", firstindex);
-
-    const reverse: string = message
-      .slice(firstindex + 1, finish)
-      .split("")
-      .reverse()
-      .join("");
-
-    const newMessage: string = message.replace(
-      message.slice(firstindex, finish + 1),
-      reverse
-    );
-
-    return decode(newMessage);
-  }
-
-  const finish: number = message.indexOf(")", lastindex);
-
-  const reverse: string = message
-    .slice(lastindex + 1, finish)
-    .split("")
-    .reverse()
-    .join("");
-
-  const newMessage: string = message.replace(
-    message.slice(lastindex, finish + 1),
-    reverse
-  );
-
-  return decode(newMessage);
-}
-*/
+ *function decode(message: string): string {
+ *  const lastindex: number = message.lastIndexOf("(");
+ *  const firstindex: number = message.indexOf("(");
+ *
+ *  if (lastindex === -1 || firstindex === -1) return message;
+ *
+ *  if (firstindex === lastindex) {
+ *    const finish: number = message.indexOf(")", firstindex);
+ *
+ *    const reverse: string = message
+ *      .slice(firstindex + 1, finish)
+ *      .split("")
+ *      .reverse()
+ *      .join("");
+ *
+ *    const newMessage: string = message.replace(
+ *      message.slice(firstindex, finish + 1),
+ *      reverse
+ *    );
+ *
+ *    return decode(newMessage);
+ *  }
+ *
+ *  const finish: number = message.indexOf(")", lastindex);
+ *
+ *  const reverse: string = message
+ *    .slice(lastindex + 1, finish)
+ *    .split("")
+ *    .reverse()
+ *    .join("");
+ *
+ *  const newMessage: string = message.replace(
+ *    message.slice(lastindex, finish + 1),
+ *    reverse
+ *  );
+ *
+ *  return decode(newMessage);
+ *}
+ */
 
 function decode(message: string): string {
   const storage: string[] = [];
