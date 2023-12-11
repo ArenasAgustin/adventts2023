@@ -2,7 +2,7 @@ import maxDistance from "./06";
 import { expect, test } from "@jest/globals";
 
 describe("06", () => {
-  test("Test 1: tiene que devolver un array", () => {
+  test("Test 1: tiene que devolver un number", () => {
     expect(typeof maxDistance(">>*<")).toEqual("number");
   });
 

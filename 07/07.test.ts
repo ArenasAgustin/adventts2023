@@ -2,7 +2,7 @@ import drawGift from "./07";
 import { expect, test } from "@jest/globals";
 
 describe("07", () => {
-  test("Test 1: tiene que devolver un array", () => {
+  test("Test 1: tiene que devolver un string", () => {
     expect(typeof drawGift(4, "+")).toEqual("string");
   });
 
