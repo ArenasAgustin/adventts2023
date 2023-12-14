@@ -20,7 +20,27 @@ describe("09", () => {
     expect(adjustLights(["🟢", "🔴", "🟢", "🔴", "🟢"])).toEqual(0);
   });
 
-  test("Test 3: tiene que devolver 5", () => {
-    expect(adjustLights(["🔴", "🔴", "🟢", "🔴", "🟢", "🔴"])).toEqual(5);
+  test("Test 3: tiene que devolver 1", () => {
+    expect(
+      adjustLights([
+        "🔴",
+        "🔴",
+        "🟢",
+        "🔴",
+        "🟢",
+        "🔴",
+        "🟢",
+        "🔴",
+        "🟢",
+        "🔴",
+        "🟢",
+        "🔴",
+        "🟢",
+        "🔴",
+        "🟢",
+        "🔴",
+        "🟢",
+      ])
+    ).toEqual(1);
   });
 });

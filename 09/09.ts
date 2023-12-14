@@ -1,14 +1,11 @@
 function adjustLights(lights: string[]): number {
   let count = 0;
-  let prevLight = lights[0];
 
-  for (let i = 1; i < lights.length; i++) {
-    if (lights[i] === prevLight) {
+  for (let i = lights.length; i > 0; i--) {
+    if (lights[i] === lights[i - 1]) {
       count++;
-      lights[i] = lights[i] === "🔴" ? "🟢" : "🔴";
+      lights[i - 1] = lights[i] === "🔴" ? "🟢" : "🔴";
     }
-
-    prevLight = lights[i];
   }
 
   return count;
