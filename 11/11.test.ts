@@ -1,24 +1,24 @@
-import createChristmasTree from "./11";
+import getIndexsForPalindrome from "./11";
 import { expect, test } from "@jest/globals";
 
-describe("10", () => {
+describe("11", () => {
   test("Test 1: tiene que devolver null", () => {
-    expect(typeof createChristmasTree("abac")).toEqual(null);
+    expect(typeof getIndexsForPalindrome("abac")).toEqual(null);
   });
 
   test("Test 2: tiene que devolver null", () => {
-    expect(createChristmasTree("caababa")).toEqual(null);
+    expect(getIndexsForPalindrome("caababa")).toEqual(null);
   });
 
   test("Test 3: tiene que devolver []", () => {
-    expect(createChristmasTree("anna")).toEqual([]);
+    expect(getIndexsForPalindrome("anna")).toEqual([]);
   });
 
   test("Test 3: tiene que devolver [1, 3]", () => {
-    expect(createChristmasTree("aaababa")).toEqual([1, 3]);
+    expect(getIndexsForPalindrome("aaababa")).toEqual([1, 3]);
   });
 
   test("Test 3: tiene que devolver []", () => {
-    expect(createChristmasTree("saippuakivikauppias")).toEqual([]);
+    expect(getIndexsForPalindrome("saippuakivikauppias")).toEqual([]);
   });
 });
