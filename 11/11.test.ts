@@ -3,7 +3,7 @@ import { expect, test } from "@jest/globals";
 
 describe("11", () => {
   test("Test 1: tiene que devolver null", () => {
-    expect(typeof getIndexsForPalindrome("abac")).toEqual(null);
+    expect(getIndexsForPalindrome("abac")).toEqual(null);
   });
 
   test("Test 2: tiene que devolver null", () => {
