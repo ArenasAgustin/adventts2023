@@ -2,7 +2,7 @@ import checkIsValidCopy from "./12";
 import { expect, test } from "@jest/globals";
 
 describe("12", () => {
-  test("Test 1: tiene que devolver null", () => {
+  test("Test 1: tiene que devolver boolean", () => {
     expect(
       typeof checkIsValidCopy("Santa Claus is coming", "sa#ta cl#us is comin#")
     ).toEqual("boolean");
