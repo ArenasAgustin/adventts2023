@@ -14,11 +14,11 @@ describe("06", () => {
     expect(maxDistance("<<<<<")).toEqual(5);
   });
 
-  test("Test 3: tiene que devolver 5", () => {
+  test("Test 4: tiene que devolver 5", () => {
     expect(maxDistance(">***>")).toEqual(5);
   });
 
-  test("Test 3: tiene que devolver 5", () => {
+  test("Test 5: tiene que devolver 5", () => {
     expect(maxDistance("<<**>>")).toEqual(2);
   });
 });

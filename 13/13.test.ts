@@ -20,13 +20,13 @@ describe("13", () => {
     );
   });
 
-  test("Test 3: tiene que devolver '05:02:01'", () => {
+  test("Test 4: tiene que devolver '05:02:01'", () => {
     expect(calculateTime(["01:01:01", "09:59:59", "01:01:01"])).toEqual(
       "05:02:01"
     );
   });
 
-  test("Test 3: tiene que devolver '-00:00:01'", () => {
+  test("Test 5: tiene que devolver '-00:00:01'", () => {
     expect(
       calculateTime(["01:01:01", "03:59:59", "01:01:01", "00:57:58"])
     ).toEqual("-00:00:01");

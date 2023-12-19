@@ -14,11 +14,11 @@ describe("11", () => {
     expect(getIndexsForPalindrome("anna")).toEqual([]);
   });
 
-  test("Test 3: tiene que devolver [1, 3]", () => {
+  test("Test 4: tiene que devolver [1, 3]", () => {
     expect(getIndexsForPalindrome("aaababa")).toEqual([1, 3]);
   });
 
-  test("Test 3: tiene que devolver []", () => {
+  test("Test 5: tiene que devolver []", () => {
     expect(getIndexsForPalindrome("saippuakivikauppias")).toEqual([]);
   });
 });

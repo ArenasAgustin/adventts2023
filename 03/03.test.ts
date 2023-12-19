@@ -10,11 +10,11 @@ describe("03", () => {
     expect(findNaughtyStep("stepfor", "stepor")).toEqual("f");
   });
 
-  test("Test 2: tiene que devolver 'e'", () => {
+  test("Test 3: tiene que devolver 'e'", () => {
     expect(findNaughtyStep("abcd", "abcde")).toEqual("e");
   });
 
-  test("Test 3: tiene que devolver ''", () => {
+  test("Test 4: tiene que devolver ''", () => {
     expect(findNaughtyStep("abcde", "abcde")).toEqual("");
   });
 });

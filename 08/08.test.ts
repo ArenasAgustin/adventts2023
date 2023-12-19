@@ -14,11 +14,11 @@ describe("08", () => {
     expect(organizeGifts("20a")).toEqual("{a}{a}");
   });
 
-  test("Test 3: tiene que devolver '[b]{b}{b}[a][a]{a}{a}(cccc)'", () => {
+  test("Test 4: tiene que devolver '[b]{b}{b}[a][a]{a}{a}(cccc)'", () => {
     expect(organizeGifts("70b120a4c")).toEqual("[b]{b}{b}[a][a]{a}{a}(cccc)");
   });
 
-  test("Test 3: tiene que devolver '{d}(ddddddddd)[e](e)'", () => {
+  test("Test 5: tiene que devolver '{d}(ddddddddd)[e](e)'", () => {
     expect(organizeGifts("19d51e")).toEqual("{d}(ddddddddd)[e](e)");
   });
 });

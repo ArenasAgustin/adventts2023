@@ -16,13 +16,13 @@ describe("10", () => {
     );
   });
 
-  test("Test 3: tiene que devolver '    1\n   2 3\n  1 2 3\n 1 2 3 1\n2 3 1 2 3\n    |\n'", () => {
+  test("Test 4: tiene que devolver '    1\n   2 3\n  1 2 3\n 1 2 3 1\n2 3 1 2 3\n    |\n'", () => {
     expect(createChristmasTree("123", 5)).toEqual(
       "    1\n   2 3\n  1 2 3\n 1 2 3 1\n2 3 1 2 3\n    |\n"
     );
   });
 
-  test("Test 3: tiene que devolver '  *\n @ o\n* @ o\n  |\n'", () => {
+  test("Test 5: tiene que devolver '  *\n @ o\n* @ o\n  |\n'", () => {
     expect(createChristmasTree("*@o", 3)).toEqual("  *\n @ o\n* @ o\n  |\n");
   });
 });

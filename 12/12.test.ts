@@ -18,11 +18,11 @@ describe("12", () => {
     expect(checkIsValidCopy("Santa Claus", "###:. c:+##")).toEqual(false);
   });
 
-  test("Test 3: tiene que devolver [1, 3]", () => {
+  test("Test 4: tiene que devolver [1, 3]", () => {
     expect(checkIsValidCopy("S#nta Claus", "S#ntA ClauS")).toEqual(true);
   });
 
-  test("Test 3: tiene que devolver []", () => {
+  test("Test 5: tiene que devolver []", () => {
     expect(checkIsValidCopy("3 #egalos", "3 .+:# #:")).toEqual(false);
   });
 });

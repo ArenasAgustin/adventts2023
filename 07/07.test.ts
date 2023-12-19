@@ -18,11 +18,11 @@ describe("07", () => {
     );
   });
 
-  test("Test 3: tiene que devolver un regalo de tamaño 1", () => {
+  test("Test 4: tiene que devolver un regalo de tamaño 1", () => {
     expect(drawGift(1, "^")).toEqual("#\n");
   });
 
-  test("Test 3: tiene que devolver un regalo de tamaño 2", () => {
+  test("Test 5: tiene que devolver un regalo de tamaño 2", () => {
     expect(drawGift(2, "&")).toEqual(" ##\n###\n##\n");
   });
 });

@@ -16,11 +16,11 @@ describe("09", () => {
     expect(adjustLights(["🔴", "🔴", "🟢", "🟢", "🔴"])).toEqual(2);
   });
 
-  test("Test 3: tiene que devolver 0", () => {
+  test("Test 4: tiene que devolver 0", () => {
     expect(adjustLights(["🟢", "🔴", "🟢", "🔴", "🟢"])).toEqual(0);
   });
 
-  test("Test 3: tiene que devolver 1", () => {
+  test("Test 5: tiene que devolver 1", () => {
     expect(
       adjustLights([
         "🔴",

@@ -14,11 +14,11 @@ describe("14", () => {
     expect(maxGifts([2, 7, 9, 3, 1])).toEqual(12);
   });
 
-  test("Test 3: tiene que devolver 99", () => {
+  test("Test 4: tiene que devolver 99", () => {
     expect(maxGifts([99])).toEqual(99);
   });
 
-  test("Test 3: tiene que devolver 1", () => {
+  test("Test 5: tiene que devolver 1", () => {
     expect(maxGifts([0, 0, 0, 0, 1])).toEqual(1);
   });
 });
