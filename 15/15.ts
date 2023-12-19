@@ -1,71 +1,48 @@
 function autonomousDrive(store: string[], movements: string[]): string[] {
-  let positionX: number = 0;
-  let positionY: number = 0;
-  let newStore: string[][] = [[]];
-  let result: string[] = [];
+  let y: number = store.findIndex((x) => x.includes("!"));
+  let x: number = store[y].indexOf("!");
 
-  for (let i = 0; i < store.length; i++) {
-    for (let j = 0; j < store[i].length; j++) {
-      if (store[i][j] === "!") {
-        positionX = j;
-        positionY = i;
-      }
-    }
-  }
-
-  for (let i = 0; i < store.length; i++) {
-    newStore[i] = store[i].split("");
-  }
+  store[y] = store[y].substring(0, x) + "." + store[y].substring(x + 1);
 
   for (let i = 0; i < movements.length; i++) {
     switch (movements[i]) {
       case "R":
-        if (positionX < store[0].length - 1) {
-          if (newStore[positionY][positionX + 1] !== "*") {
-            newStore[positionY][positionX] = ".";
-            positionX++;
-            newStore[positionY][positionX] = "!";
+        if (x < store[0].length - 1) {
+          if (store[y][x + 1] !== "*") {
+            x++;
           }
         }
         break;
 
       case "L":
-        if (positionX > 0) {
-          if (newStore[positionY][positionX - 1] !== "*") {
-            newStore[positionY][positionX] = ".";
-            positionX--;
-            newStore[positionY][positionX] = "!";
+        if (x > 0) {
+          if (store[y][x - 1] !== "*") {
+            x--;
           }
         }
         break;
 
       case "D":
-        if (positionY < store.length - 1) {
-          if (newStore[positionY + 1][positionX] !== "*") {
-            newStore[positionY][positionX] = ".";
-            positionY++;
-            newStore[positionY][positionX] = "!";
+        if (y < store.length - 1) {
+          if (store[y + 1][x] !== "*") {
+            y++;
           }
         }
         break;
 
       case "U":
-        if (positionY > 0) {
-          if (newStore[positionY - 1][positionX] !== "*") {
-            newStore[positionY][positionX] = ".";
-            positionY--;
-            newStore[positionY][positionX] = "!";
+        if (y > 0) {
+          if (store[y - 1][x] !== "*") {
+            y--;
           }
         }
         break;
     }
   }
 
-  for (let i = 0; i < newStore.length; i++) {
-    result.push(newStore[i].join(""));
-  }
+  store[y] = store[y].substring(0, x) + "!" + store[y].substring(x + 1);
 
-  return result;
+  return store;
 }
 
 console.log(
